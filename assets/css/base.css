@@ -1,0 +1,181 @@
+/* Reservado para fontes e cores */
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/Lora-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/Lora-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: italic;
+}
+/* Root */
+:root {
+    --gold-noble: #c6a773;
+    /* Dourado nobre - títulos e detalhes */
+    --liturgical-purple: #5b3c88;
+    /* Roxo litúrgico - inspirado nas vestes */
+    --deep-navy: #2a2e43;
+    /* Azul escuro profundo - fundo/texto */
+    --light-gray: #f2f2f2;
+    /* Cinza neutro claro - fundos suaves */
+    --deep-red: #8b2e2e;
+    /* Vermelho escuro - detalhes/acentos */
+    
+}
+:root {
+  --font-title: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+}
+
+body, p, li, a, span {
+  font-family: var(--font-body);
+}
+
+/* geral */
+body {
+    margin: 0;
+    color: var(--deep-navy);
+}
+
+
+main {
+    padding-top: 0;
+}
+
+section {
+    padding: 50px 80px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header & Footer */
+header {
+    background-color: var(--gold-noble);
+    color: black;
+}
+
+header,
+.footer-top-label {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-title,
+.footer-title {
+    display: flex;
+}
+
+.header-title figure,
+.footer-title figure {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title h1,
+.logo-title h2 {
+    margin: 10px 0;
+}
+
+header nav,
+.footer-links {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+
+header nav ul,
+.footer-links ul {
+    display: flex;
+    gap: 3rem;
+    padding: 0;
+}
+
+header nav ul li {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+    transition: color 0.3s ease;
+}
+
+header nav ul li:hover {
+  color: var(--liturgical-purple);
+  text-decoration: underline;
+}
+
+/* Footer */
+/* Footer title */
+footer {
+    background-color: var(--deep-navy);
+    color: var(--light-gray);
+}
+
+
+.footer-links {
+    flex-direction: column;
+}
+
+.footer-links ul {
+    margin: 0;
+    transition: all 0.3s ease;
+}
+.footer-links ul a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+/* Minha WebDev Label */
+#dev-label {
+    width: 100%;
+}
+
+.label-txt {
+    font-size: 0.8rem;
+    text-align: start;
+    padding: 0;
+    color: var(--light-gray);
+    text-decoration: none;
+    opacity: 0.9;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.label-txt a:active,
+.label-txt a:focus {
+    color: var(--light-gray);
+    opacity: 0.9;
+    outline: none;
+}

@@ -1,0 +1,244 @@
+:root {
+    --gold-noble: #c6a773;
+    /* Dourado nobre - títulos e detalhes */
+    --liturgical-purple: #5b3c88;
+    /* Roxo litúrgico - inspirado nas vestes */
+    --deep-navy: #2a2e43;
+    /* Azul escuro profundo - fundo/texto */
+    --light-gray: #f2f2f2;
+    /* Cinza neutro claro - fundos suaves */
+    --pure-white: #ffffff;
+    /* Branco clássico - texto ou fundo */
+    --deep-red: #8b2e2e;
+    /* Vermelho escuro - detalhes/acentos */
+}
+
+/* All Section Titles */
+.section-title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+    color: var(--deep-navy);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 40px;
+    background-color: var(--gold-noble);
+}
+
+/* hero */
+#hero {
+    background-image: url("../img/pictures/live-missa.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#hero .hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.hero-content P {
+    margin-top: 0;
+}
+/* youtube link button */
+
+#hero-ytb-btn {
+    display: flex;
+    align-content: center;
+    
+    background-color: #c4302b;
+    color: white;
+}
+#hero-ytb-btn:hover {
+    background-color: #a72823;
+}
+
+
+
+/* about us */
+#events {
+    background-color: var(--light-gray);
+}
+.about-container {
+    display: flex;
+    font-size: 1.4rem;
+}
+#about figure {
+    display: flex;
+    align-items: center;
+}
+#about img {
+    border-radius: 8px;
+    border: 1px solid var(--gold-noble);
+    box-sizing: border-box;
+    height: 400px;
+    width: 600px;
+    
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* events */
+.main-events {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 40px 0;
+}
+.event-box {
+    background-color: white;
+    width: min(600px, 50%);
+    padding: 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: #2a2e43 2px 2px 5px;
+}
+.box-event-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.box-event-info p{
+    margin: 10px;
+}
+.box-event-info div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+/* events - visitors */
+.visitors-div {
+    background-color: yellow;
+    border-left: 5px solid orange;
+    padding: 10px;
+}
+
+/* map and address */
+.location-container {
+    display: flex;
+    justify-content: space-between;
+}
+.location-content {
+    width: 50%;
+}
+.map {
+    display: flex;
+    align-items: center;
+}
+
+iframe {
+    border-radius: 8px;
+    border: 1px solid var(--gold-noble);
+    height: 100%;
+}
+
+.location-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* CONTACT */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+    
+    text-align: center;
+}
+.contact-group-1, .follow-us-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.contact-group-1 a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.follow-us-icons a {
+    display: flex;
+    align-items: center;
+}
+
+
+#email-btn, #wpp-btn {
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease;
+    color: #f2f2f2;
+}
+#email-btn:hover, #wpp-btn:hover {
+    transform: scale(1.05);
+    color: #ffffff;
+}
+#email-btn {
+    background-color: #4b5d67;
+}
+#email-btn:hover {
+    background-color: #3b4c53;
+}
+#wpp-btn {
+    background-color: #2e4f3e;
+}
+#wpp-btn:hover {
+    background-color: #253f31;
+}
+.follow-us-icons a {
+    transition: transform 0.2s ease;   
+}
+.follow-us-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Buttons Base */
+.btn {
+    display: inline-flex;
+    width: fit-content; 
+    align-items: center;
+    justify-items: center;  
+    gap: 0.5rem;         
+    padding: 15px 20px;
+    font-weight: bold;
+    font-family: inherit;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+.btn img {
+    display: inline-block;
+}
