@@ -23,7 +23,10 @@
     .footer-title {
         flex-direction: column;
     }
-
+    .footer-title figure {
+        align-self: center;
+        justify-self: center;
+    }
     .logo-title h1 {
         font-size: 1rem;
     }
@@ -174,8 +177,9 @@
         margin-bottom: 10px;
     }
 
-    #copy-caption {
+    .copyright p {
         font-size: 0.8rem;
+        margin: 0;
     }
 
     #dev-label {
