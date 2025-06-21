@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/img/pictures/church-logo.png">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
 
 </head>
 
@@ -23,11 +24,16 @@
             </div>
         </div>
         <nav>
-            <ul>
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="noticias.html">Eventos</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#events">Eventos</a></li>
+                <li><a href="#location">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -84,7 +90,7 @@
             <div class="main-events">
                 <div class="event-box">
                     <div class="box-event-title">
-                        <img src="assets/img/Placeholder Image - 637x355.jpg" alt="Event icon" height="50" width="50">
+                        <img src="assets/img/icons/cross.jpg" alt="Event icon" height="50" width="50">
                         <h3>Divina Liturgia</h3>
                     </div>
                     <div class="box-event-content">
@@ -106,7 +112,7 @@
                 </div>
                 <div class="event-box">
                     <div class="box-event-title">
-                        <img src="assets/img/Placeholder Image - 637x355.jpg" alt="Event icon" height="50" width="50">
+                        <img src="assets/img/icons/agape.jpg" alt="Event icon" height="50" width="50">
                         <h3>Ágape</h3>
                     </div>
                     <div class="box-event-content">
@@ -140,7 +146,7 @@
         <!-- Map and Address -->
         <section id="location">
             <div class="section-title">
-                <h2>Como Fazer Parte</h2>
+                <h2>Contato e Localização</h2>
             </div>
 
             <div class="location-container">
@@ -200,7 +206,8 @@
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.3362112012223!2d-47.90863832486881!3d-15.838917084807727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a254058017b1d%3A0xa34e25146dc7de42!2sIgreja%20Ortodoxa%20Russa%20Santa%20Maria%20do%20Verdadeiro%20Caminho%20(Patriarcado%20de%20Moscou)!5e0!3m2!1spt-BR!2sbr!4v1749753882641!5m2!1spt-BR!2sbr"
                         width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -284,6 +291,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

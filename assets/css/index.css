@@ -38,7 +38,7 @@
     background-image: url("../img/pictures/live-missa.jpg");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: auto;
     position: relative;
 }
 
@@ -94,11 +94,11 @@
 }
 #about img {
     border-radius: 8px;
-    border: 1px solid var(--gold-noble);
+    border: 2px solid var(--gold-noble);
+    border-style: double;
     box-sizing: border-box;
     height: 400px;
     width: 600px;
-    
     overflow: hidden;
     object-fit: cover;
 }
@@ -125,6 +125,9 @@
     align-items: center;
     gap: 1rem;
 }
+.box-event-title img {
+    border-radius: 50%;
+}
 .box-event-info p{
     margin: 10px;
 }
@@ -135,7 +138,7 @@
 }
 /* events - visitors */
 .visitors-div {
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.6);
     border-left: 5px solid orange;
     padding: 10px;
 }
@@ -155,7 +158,6 @@
 
 iframe {
     border-radius: 8px;
-    border: 1px solid var(--gold-noble);
     height: 100%;
 }
 
